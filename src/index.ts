@@ -7,8 +7,7 @@ const app = express();
 const route = Router();
 const dataController = createControllerFactory();
 
-route.get("/data", dataController.list_data);
-route.get("/testing", (req: Request, res: Response) => {  res.json({message: 'batata'}) });
+route.get("/data", (req: Request, res: Response) => { dataController.list_data(req, res) });
 
 app.use(express.json());
 app.use(route);
