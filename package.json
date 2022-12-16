@@ -1,0 +1,20 @@
+{
+  "name": "aula03",
+  "version": "1.0.0",
+  "description": "exercicios da terceira aula de TDD em Tópicos Avançados no curso de BSI",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/crickkin/Aula03.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/crickkin/Aula03/issues"
+  },
+  "homepage": "https://github.com/crickkin/Aula03#readme"
+}
