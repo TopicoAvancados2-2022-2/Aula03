@@ -1,4 +1,4 @@
-import express, { Router } from "express";
+import express, { Router, Request, Response } from "express";
 
 import { createControllerFactory } from "./infra/Factories";
 
@@ -8,6 +8,7 @@ const route = Router();
 const dataController = createControllerFactory();
 
 route.get("/data", dataController.list_data);
+route.get("/testing", (req: Request, res: Response) => {  res.json({message: 'batata'}) });
 
 app.use(express.json());
 app.use(route);
