@@ -8,6 +8,12 @@ class Data implements IData {
     constructor(msg: string) {
         this.msg = msg;
     }
+
+    
+    public get getMsg() : string {
+        return this.msg;
+    }
+    
 }
 
 export { IData, Data };
